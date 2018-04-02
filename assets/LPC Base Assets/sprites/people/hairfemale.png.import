@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/hairfemale.png-5e1faab700139cb406d80028fffe6299.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/hairfemale.png"
+source_md5="438ebf9bee6ec75f2b64b9be5c8e30a8"
+
+dest_files=[ "res://.import/hairfemale.png-5e1faab700139cb406d80028fffe6299.stex" ]
+dest_md5="66b713c386de53587574cadb90072c8f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

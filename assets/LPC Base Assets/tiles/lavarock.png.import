@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/lavarock.png-1afe2c520436660c8b2a3022f177be0e.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/lavarock.png"
+source_md5="bf237c2c972fb4a92e14b1a5efd21965"
+
+dest_files=[ "res://.import/lavarock.png-1afe2c520436660c8b2a3022f177be0e.stex" ]
+dest_md5="98079137b9ee36fea4651b4a7f023a67"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

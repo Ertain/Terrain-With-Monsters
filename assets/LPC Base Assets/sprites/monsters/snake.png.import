@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/snake.png-93e2bb6a3f07e86e8acf017d61b40977.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/snake.png"
+source_md5="9d688f5fb53d0b51a5efcaecd1615d94"
+
+dest_files=[ "res://.import/snake.png-93e2bb6a3f07e86e8acf017d61b40977.stex" ]
+dest_md5="d9a221a2d52922d65558d0f31247d4dc"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

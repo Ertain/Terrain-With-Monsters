@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/castlewalls.png-15fd3ffd9ac1dd7e8bce7334ef296c5b.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/castlewalls.png"
+source_md5="143c3fed9aac860db27fede8d241a066"
+
+dest_files=[ "res://.import/castlewalls.png-15fd3ffd9ac1dd7e8bce7334ef296c5b.stex" ]
+dest_md5="4a3cd209eb792f6b5c9391bed35387fe"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

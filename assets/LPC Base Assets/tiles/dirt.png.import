@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/dirt.png-7aa091a0f2078969a329a784e145f97d.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/dirt.png"
+source_md5="efe5f23d3719f76ee7ba444017b7b3f5"
+
+dest_files=[ "res://.import/dirt.png-7aa091a0f2078969a329a784e145f97d.stex" ]
+dest_md5="bbdd433d0a5f3d4fc890fd2c6cd08789"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

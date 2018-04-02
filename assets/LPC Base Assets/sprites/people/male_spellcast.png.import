@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/male_spellcast.png-8761c9b4cb15260b8aaf4e6d68de2f2b.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/male_spellcast.png"
+source_md5="7d1400ce0d4639964612b14efdefd5dc"
+
+dest_files=[ "res://.import/male_spellcast.png-8761c9b4cb15260b8aaf4e6d68de2f2b.stex" ]
+dest_md5="5bb14793aeb6f49b022d99ab7fc2c30e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

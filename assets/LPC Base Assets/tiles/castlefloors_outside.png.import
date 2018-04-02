@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/castlefloors_outside.png-2603c6e2406cbeab0f467fd36543558a.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/castlefloors_outside.png"
+source_md5="22b7f139f1d918a8c97bc6ca0ecc0ce3"
+
+dest_files=[ "res://.import/castlefloors_outside.png-2603c6e2406cbeab0f467fd36543558a.stex" ]
+dest_md5="e12c7381cdee08b3fe428fd1969423cc"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

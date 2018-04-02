@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/holek.png-7b257501b89831ac05012b1d74d0d6a3.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/holek.png"
+source_md5="a9bb6f25a4ad5028ad8c3688826e5f1d"
+
+dest_files=[ "res://.import/holek.png-7b257501b89831ac05012b1d74d0d6a3.stex" ]
+dest_md5="a259d247209d0e5257f9882d3d6d9828"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

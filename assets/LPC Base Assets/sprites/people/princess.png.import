@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/princess.png-a9924fa67778f7f10d034152fbdf4996.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/princess.png"
+source_md5="d073a16f09c8844146d0ee126ab392c5"
+
+dest_files=[ "res://.import/princess.png-a9924fa67778f7f10d034152fbdf4996.stex" ]
+dest_md5="4a77a95ac30a25624ee44e8cff11e972"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

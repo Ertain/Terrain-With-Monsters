@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/dungeon.png-acc099ad75931b2f2cc8954ac01d0379.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/dungeon.png"
+source_md5="d33da9b22ee998a701303125a37cd955"
+
+dest_files=[ "res://.import/dungeon.png-acc099ad75931b2f2cc8954ac01d0379.stex" ]
+dest_md5="4fd458c53e7d55fbc2d9ae4939556b70"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

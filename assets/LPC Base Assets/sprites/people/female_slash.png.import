@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/female_slash.png-1e930ffdf6d0ec55749db6803fe59495.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/female_slash.png"
+source_md5="1092da58286ab132a1a18ad6c896385d"
+
+dest_files=[ "res://.import/female_slash.png-1e930ffdf6d0ec55749db6803fe59495.stex" ]
+dest_md5="29f19cf9a1d3eaa30d78bafbd20bbc45"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

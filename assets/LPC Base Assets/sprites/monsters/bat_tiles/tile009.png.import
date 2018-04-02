@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile009.png-90c97482c3d0fd85b3fcb0dcd01258a7.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/bat_tiles/tile009.png"
+source_md5="24cdbe21eb6a424172978d2709a0bf91"
+
+dest_files=[ "res://.import/tile009.png-90c97482c3d0fd85b3fcb0dcd01258a7.stex" ]
+dest_md5="6c46f69a5066a2edcaf068fd92d3d0d2"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

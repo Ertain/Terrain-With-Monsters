@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/ghost.png-5b6870a537a865f3ecf165a159b90495.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/ghost.png"
+source_md5="10c2f0dd0bc728c848afa7db785f8c89"
+
+dest_files=[ "res://.import/ghost.png-5b6870a537a865f3ecf165a159b90495.stex" ]
+dest_md5="215af923b5f2cb23b0cd7271b337f2ec"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

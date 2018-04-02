@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/victoria.png-55c93faa4f31019370ace204b7fc54d1.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/victoria.png"
+source_md5="1b6b117a226bb5a4a1243712e6f3f468"
+
+dest_files=[ "res://.import/victoria.png-55c93faa4f31019370ace204b7fc54d1.stex" ]
+dest_md5="738182439b2c1d066b8c25bbd1cd88e0"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

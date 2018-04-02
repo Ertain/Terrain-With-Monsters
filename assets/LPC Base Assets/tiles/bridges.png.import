@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/bridges.png-d88d1c9f068c69e23fbaa427b7136305.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/bridges.png"
+source_md5="9c4c5b6951986c548fe3ae7fb497c657"
+
+dest_files=[ "res://.import/bridges.png-d88d1c9f068c69e23fbaa427b7136305.stex" ]
+dest_md5="4ae19e2f58c4b4adae168116e7f54047"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

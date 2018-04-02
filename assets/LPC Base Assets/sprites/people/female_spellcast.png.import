@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/female_spellcast.png-d2638e060be1bc7082bddb8e66904897.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/female_spellcast.png"
+source_md5="2f2b28dc81580e15f5ba6de1b2c5b751"
+
+dest_files=[ "res://.import/female_spellcast.png-d2638e060be1bc7082bddb8e66904897.stex" ]
+dest_md5="af541d9fc0a7a86eea8e0d18e0e4f2c9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

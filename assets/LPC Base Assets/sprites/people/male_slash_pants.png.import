@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/male_slash_pants.png-4d03d4183f0d4ab412dba2456a54b3a3.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/male_slash_pants.png"
+source_md5="8946026a3f50a7613e8ca22accf25b9f"
+
+dest_files=[ "res://.import/male_slash_pants.png-4d03d4183f0d4ab412dba2456a54b3a3.stex" ]
+dest_md5="0effa128d886fc292af375a6b814546d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

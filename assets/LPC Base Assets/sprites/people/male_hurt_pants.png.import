@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/male_hurt_pants.png-dd0d10b7dc7e0f592336db59801fbd50.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/male_hurt_pants.png"
+source_md5="72eed5ce12eb3b2ef12a160d51c42bf3"
+
+dest_files=[ "res://.import/male_hurt_pants.png-dd0d10b7dc7e0f592336db59801fbd50.stex" ]
+dest_md5="f37f738c5ac049a90329dbb8d55db68e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

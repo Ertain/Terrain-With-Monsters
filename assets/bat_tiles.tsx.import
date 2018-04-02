@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/bat_tiles.tsx-0234d98f6ce5ab086b8f64ad4e5d9197.res"
+
+[deps]
+
+source_file="res://assets/bat_tiles.tsx"
+source_md5="67c59e01d8eae7661d616962d06aedb5"
+
+dest_files=[ "res://.import/bat_tiles.tsx-0234d98f6ce5ab086b8f64ad4e5d9197.res" ]
+dest_md5="f7d4089150f8753aeb0b46dfeceb0deb"
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

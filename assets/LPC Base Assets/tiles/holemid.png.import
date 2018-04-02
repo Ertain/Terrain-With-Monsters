@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/holemid.png-2f2aae0b1d5e8cc72855728ead65e9e0.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/holemid.png"
+source_md5="0298ab46c8a0e2cdcf8b8f5dfbb15ce8"
+
+dest_files=[ "res://.import/holemid.png-2f2aae0b1d5e8cc72855728ead65e9e0.stex" ]
+dest_md5="5c3f7821f4dcc22ff82138f08416dc57"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

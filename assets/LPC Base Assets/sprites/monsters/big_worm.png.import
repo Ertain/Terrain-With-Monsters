@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/big_worm.png-33b06456aa1e91ab3d30706119c1348b.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/big_worm.png"
+source_md5="435a7a4412ca1c969139486de1bdc292"
+
+dest_files=[ "res://.import/big_worm.png-33b06456aa1e91ab3d30706119c1348b.stex" ]
+dest_md5="8b86fe9065d2c731996689db3d2cd55c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

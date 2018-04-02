@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/barrel.png-118f4b864cd3bb4fe39ed75608cd228e.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/tiles/barrel.png"
+source_md5="48114fd75072eda27c70af8fdae1df2c"
+
+dest_files=[ "res://.import/barrel.png-118f4b864cd3bb4fe39ed75608cd228e.stex" ]
+dest_md5="292b42265a441cffd1c44b6000fa5db7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
