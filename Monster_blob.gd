@@ -16,7 +16,6 @@
 #  MA 02110-1301, USA.
 #  
 
-
 extends KinematicBody2D
 
 const MAX_SPEED = 750 # Pixels per second
@@ -26,10 +25,11 @@ var vel = Vector2()
 var delay = 1
 var waited = 0
 # We can't have the speech bubble showing all the time.
-var speech_bubble_delay = 0.6
-var speech_bubble_wait = 0
+var show_speech_bubble = false
+onready var speech_bubble_timer = get_node("bubble_timer")
 onready var speech_bubble = get_node("speech bubble")
 var the_collider = 0
+var collisionCounter = 0
 
 func randomly_select_direction():
     var direction = ['move_up','move_down','move_right','move_left']
@@ -37,8 +37,14 @@ func randomly_select_direction():
     var random_choice = direction[num]
     return random_choice
 
+func _on_bubble_timer_timeout():
+    speech_bubble.hide()
+
 func _ready():
     randomize()
+    speech_bubble_timer.wait_time = 1
+    # Updates during the "_physics_process".
+    speech_bubble_timer.process_mode = 0
 
 func _physics_process(change_in_time):
     var motion = Vector2()
@@ -67,12 +73,16 @@ func _physics_process(change_in_time):
     elif waited <= delay:
         waited += change_in_time
     
-    var the_collider = get_slide_collision(0)
-    var le_collision = the_collider.collider
-    if le_collision.get_property_list()['name'] == "Bat" and \
-    speech_bubble_wait > speech_bubble_delay:
+    # Show the speech bubble. Set a timer to count down
+    # until you need to hide the speech bubble.
+    if show_speech_bubble:
         speech_bubble.show()
-        speech_bubble_wait = 0
-    elif speech_bubble_wait <= speech_bubble_delay:
-        speech_bubble_wait += change_in_time
-        speech_bubble.hide()
+        speech_bubble_timer.start()
+        show_speech_bubble = false
+
+    var collisionCounter = get_slide_count() - 1
+    if collisionCounter > -1:
+        var le_collision =  get_slide_collision(0).collider
+        if le_collision is KinematicBody2D:
+            show_speech_bubble = true
+
