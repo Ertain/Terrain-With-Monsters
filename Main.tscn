@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 8.91259 )
 
-[node name="Main" type="Node2D" index="0"]
+[node name="Main" type="Node2D"]
 
 [node name="Plain" type="TileMap" parent="." index="0"]
 
@@ -66,12 +66,12 @@ position = Vector2( 223.577, 372.55 )
 scale = Vector2( 22.389, 2.52121 )
 shape = SubResource( 1 )
 
-[node name="Monster" parent="Plain" index="1" instance=ExtResource( 2 )]
+[node name="Blob" parent="Plain" index="1" instance=ExtResource( 2 )]
 
 position = Vector2( 219.138, 201.176 )
 
 [node name="Bat" parent="Plain" index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 158.986, 259.887 )
+position = Vector2( 200.298, 181.452 )
 
 
