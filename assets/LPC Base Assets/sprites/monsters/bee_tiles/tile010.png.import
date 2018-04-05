@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile010.png-3b1013cf8e0f5e677c91c1e0b0023a6b.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/bee_tiles/tile010.png"
+source_md5="6e312e8cb1c23d86ecf0bb6be31a0fdb"
+
+dest_files=[ "res://.import/tile010.png-3b1013cf8e0f5e677c91c1e0b0023a6b.stex" ]
+dest_md5="33d9279681c31d836ee5939fe94f2f5e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
