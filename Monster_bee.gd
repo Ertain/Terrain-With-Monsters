@@ -31,6 +31,9 @@ func randomly_select_direction():
     var random_choice = direction[num]
     return random_choice
 
+func _on_bubble_timer_timeout():
+    speech_bubble.hide()
+
 func _ready():
     randomize()
     speech_bubble_timer.wait_time = 1
