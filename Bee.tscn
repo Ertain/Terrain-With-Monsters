@@ -73,4 +73,6 @@ wait_time = 1.0
 one_shot = false
 autostart = false
 
+[connection signal="timeout" from="bubble_timer" to="." method="_on_bubble_timer_timeout"]
+
 
