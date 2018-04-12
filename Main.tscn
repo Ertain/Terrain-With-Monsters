@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/various.tsx" type="TileSet" id=1]
 [ext_resource path="res://Blob.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Bat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bee.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Ghost.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -72,6 +74,14 @@ position = Vector2( 219.138, 201.176 )
 
 [node name="Bat" parent="Plain" index="2" instance=ExtResource( 3 )]
 
-position = Vector2( 200.298, 181.452 )
+position = Vector2( 186.331, 229.968 )
+
+[node name="Bee" parent="Plain" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 253.607, 173.482 )
+
+[node name="Ghost" parent="Plain" index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 283.746, 197.74 )
 
 
