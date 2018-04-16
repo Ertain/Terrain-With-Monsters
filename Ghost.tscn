@@ -19,7 +19,7 @@ use_filter = false
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Ghost" type="KinematicBody2D" index="0"]
+[node name="Ghost" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -73,5 +73,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[connection signal="timeout" from="ghost_timer" to="." method="_on_bubble_timer_timeout"]
 
 
