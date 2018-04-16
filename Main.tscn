@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/various.tsx" type="TileSet" id=1]
 [ext_resource path="res://Blob.tscn" type="PackedScene" id=2]
@@ -6,12 +6,27 @@
 [ext_resource path="res://Bee.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Ghost.tscn" type="PackedScene" id=5]
 
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 6.93987
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 15.375, 16.3646 )
+
+[sub_resource type="CircleShape2D" id=4]
+
+custom_solver_bias = 0.0
+radius = 13.9035
+
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 8.91259 )
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" index="0"]
 
 [node name="Plain" type="TileMap" parent="." index="0"]
 
@@ -34,7 +49,28 @@ format = 1
 tile_data = PoolIntArray( 65536, 12, 0, 65537, 12, 0, 65538, 12, 0, 65539, 12, 0, 65540, 12, 0, 65541, 12, 0, 65542, 12, 0, 65543, 12, 0, 65544, 12, 0, 65545, 12, 0, 65546, 12, 0, 65547, 12, 0, 65548, 12, 0, 65549, 12, 0, 131072, 10, 0, 131073, 10, 0, 131074, 10, 0, 131075, 10, 0, 131076, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 10, 0, 131081, 10, 0, 131082, 10, 0, 131083, 10, 0, 131084, 10, 0, 131085, 10, 0, 196608, 18, 0, 196609, 18, 0, 196610, 18, 0, 196611, 18, 0, 196612, 18, 0, 196613, 18, 0, 196614, 18, 0, 196615, 18, 0, 196616, 18, 0, 196617, 18, 0, 196618, 18, 0, 196619, 18, 0, 196620, 18, 0, 196621, 18, 0, 262144, 18, 0, 262145, 18, 0, 262146, 18, 0, 262147, 18, 0, 262148, 18, 0, 262149, 18, 0, 262150, 18, 0, 262151, 18, 0, 262152, 18, 0, 262153, 18, 0, 262154, 18, 0, 262155, 18, 0, 262156, 18, 0, 262157, 18, 0, 327680, 18, 0, 327681, 18, 0, 327682, 18, 0, 327683, 18, 0, 327684, 18, 0, 327685, 18, 0, 327686, 18, 0, 327687, 18, 0, 327688, 18, 0, 327689, 18, 0, 327690, 18, 0, 327691, 18, 0, 327692, 18, 0, 327693, 18, 0, 393216, 18, 0, 393217, 18, 0, 393218, 18, 0, 393219, 18, 0, 393220, 18, 0, 393221, 18, 0, 393222, 18, 0, 393223, 18, 0, 393224, 18, 0, 393225, 18, 0, 393226, 18, 0, 393227, 18, 0, 393228, 18, 0, 393229, 18, 0, 458752, 18, 0, 458753, 18, 0, 458754, 18, 0, 458755, 18, 0, 458756, 18, 0, 458757, 18, 0, 458758, 18, 0, 458759, 18, 0, 458760, 18, 0, 458761, 18, 0, 458762, 18, 0, 458763, 18, 0, 458764, 18, 0, 458765, 18, 0, 524288, 18, 0, 524289, 18, 0, 524290, 18, 0, 524291, 18, 0, 524292, 18, 0, 524293, 18, 0, 524294, 18, 0, 524295, 18, 0, 524296, 18, 0, 524297, 18, 0, 524298, 18, 0, 524299, 18, 0, 524300, 18, 0, 524301, 18, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 655360, 18, 0, 655361, 18, 0, 655362, 18, 0, 655363, 18, 0, 655364, 18, 0, 655365, 18, 0, 655366, 18, 0, 655367, 18, 0, 655368, 18, 0, 655369, 18, 0, 655370, 18, 0, 655371, 18, 0, 655372, 18, 0, 655373, 18, 0, 720896, 18, 0, 720897, 18, 0, 720898, 18, 0, 720899, 18, 0, 720900, 18, 0, 720901, 18, 0, 720902, 18, 0, 720903, 18, 0, 720904, 18, 0, 720905, 18, 0, 720906, 18, 0, 720907, 18, 0, 720908, 18, 0, 720909, 18, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Boundaries" type="StaticBody2D" parent="Plain" index="0"]
+[node name="TileMap" type="TileMap" parent="Plain" index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 196619, 26, 0, 262148, 26, 0, 327682, 20, 0, 393227, 26, 0, 458754, 3, 0, 524296, 20, 0, 589835, 5, 0, 655362, 20, 0, 655364, 26, 0, 655370, 26, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Plain/TileMap" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -44,43 +80,128 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="0"]
+
+position = Vector2( 80.8521, 146.289 )
+scale = Vector2( 2.5123, 2.11751 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="1"]
+
+position = Vector2( 271.926, 243.081 )
+scale = Vector2( 2.5123, 2.11751 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="2"]
+
+position = Vector2( 366.049, 271.469 )
+scale = Vector2( 2.02746, 2.00249 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="3"]
+
+position = Vector2( 79.0596, 305.458 )
+scale = Vector2( 2.5123, 2.11751 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="4"]
+
+position = Vector2( 143.676, 111.881 )
+scale = Vector2( 1.02231, 0.973383 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="5"]
+
+position = Vector2( 336.9, 303.672 )
+scale = Vector2( 1.02231, 0.973383 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="6"]
+
+position = Vector2( 367.372, 175.333 )
+scale = Vector2( 1.02231, 0.973383 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="7"]
+
+position = Vector2( 367.73, 80.6927 )
+scale = Vector2( 1.02231, 0.973383 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="8"]
+
+position = Vector2( 143.676, 303.672 )
+scale = Vector2( 1.02231, 0.973383 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="9"]
+
+position = Vector2( 82.0935, 205.673 )
+scale = Vector2( 1, 1.03658 )
+shape = SubResource( 4 )
+
+[node name="Boundaries" type="StaticBody2D" parent="Plain" index="1"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plain/Boundaries" index="0"]
 
 position = Vector2( 224.48, 32.5279 )
 scale = Vector2( 22.3196, 3.52106 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Plain/Boundaries" index="1"]
 
 position = Vector2( -20.8649, 204.1 )
 scale = Vector2( 2.09893, 16.2046 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Plain/Boundaries" index="2"]
 
 position = Vector2( 470.412, 209.397 )
 scale = Vector2( 2.42982, -16.2506 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Plain/Boundaries" index="3"]
 
 position = Vector2( 223.577, 372.55 )
 scale = Vector2( 22.389, 2.52121 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Blob" parent="Plain" index="1" instance=ExtResource( 2 )]
+[node name="Blob" parent="Plain" index="2" instance=ExtResource( 2 )]
 
 position = Vector2( 219.138, 201.176 )
 
-[node name="Bat" parent="Plain" index="2" instance=ExtResource( 3 )]
+[node name="Bat" parent="Plain" index="3" instance=ExtResource( 3 )]
 
 position = Vector2( 186.331, 229.968 )
 
-[node name="Bee" parent="Plain" index="3" instance=ExtResource( 4 )]
+[node name="Bee" parent="Plain" index="4" instance=ExtResource( 4 )]
 
 position = Vector2( 253.607, 173.482 )
 
-[node name="Ghost" parent="Plain" index="4" instance=ExtResource( 5 )]
+[node name="Ghost" parent="Plain" index="5" instance=ExtResource( 5 )]
 
 position = Vector2( 283.746, 197.74 )
 

@@ -21,7 +21,7 @@ extends KinematicBody2D
 const MAX_SPEED = 750 # Pixels per second
 var speed = 0
 var vel = Vector2()
-# This is so that the blob doesn't move so often.
+# This is so that the ghost doesn't move so often.
 var delay = 1
 var waited = 0
 # We can't have the speech bubble showing all the time.
