@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://assets/various.tsx" type="TileSet" id=1]
-[ext_resource path="res://Blob.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Bat.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Bee.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Ghost.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://assets/various.tsx" type="TileSet" id=2]
+[ext_resource path="res://Blob.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bat.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Bee.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Ghost.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -28,10 +29,12 @@ extents = Vector2( 10, 8.91259 )
 
 [node name="Main" type="Node2D"]
 
+script = ExtResource( 1 )
+
 [node name="Plain" type="TileMap" parent="." index="0"]
 
 mode = 0
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -52,7 +55,7 @@ _sections_unfolded = [ "Cell" ]
 [node name="TileMap" type="TileMap" parent="Plain" index="0"]
 
 mode = 0
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -189,19 +192,19 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Blob" parent="Plain" index="2" instance=ExtResource( 2 )]
+[node name="Blob" parent="Plain" index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 219.138, 201.176 )
 
-[node name="Bat" parent="Plain" index="3" instance=ExtResource( 3 )]
+[node name="Bat" parent="Plain" index="3" instance=ExtResource( 4 )]
 
 position = Vector2( 186.331, 229.968 )
 
-[node name="Bee" parent="Plain" index="4" instance=ExtResource( 4 )]
+[node name="Bee" parent="Plain" index="4" instance=ExtResource( 5 )]
 
 position = Vector2( 253.607, 173.482 )
 
-[node name="Ghost" parent="Plain" index="5" instance=ExtResource( 5 )]
+[node name="Ghost" parent="Plain" index="5" instance=ExtResource( 6 )]
 
 position = Vector2( 283.746, 197.74 )
 
