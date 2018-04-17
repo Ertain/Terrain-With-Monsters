@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile011.png-7727162a924ef09cc75627b82eea3281.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile011.png"
+source_md5="f7ee4f5da06c6f1248dd9f7f52c1f419"
+
+dest_files=[ "res://.import/tile011.png-7727162a924ef09cc75627b82eea3281.stex" ]
+dest_md5="00ccb0de33cd8c93f936fc1060cfe413"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
