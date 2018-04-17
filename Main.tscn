@@ -6,27 +6,27 @@
 [ext_resource path="res://Bee.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Ghost.tscn" type="PackedScene" id=5]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 6.93987
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 15.375, 16.3646 )
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
 radius = 13.9035
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 8.91259 )
 
-[node name="Main" type="Node2D" index="0"]
+[node name="Main" type="Node2D"]
 
 [node name="Plain" type="TileMap" parent="." index="0"]
 
@@ -84,61 +84,61 @@ bounce = 0.0
 
 position = Vector2( 80.8521, 146.289 )
 scale = Vector2( 2.5123, 2.11751 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="1"]
 
 position = Vector2( 271.926, 243.081 )
 scale = Vector2( 2.5123, 2.11751 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="2"]
 
 position = Vector2( 366.049, 271.469 )
 scale = Vector2( 2.02746, 2.00249 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="3"]
 
 position = Vector2( 79.0596, 305.458 )
 scale = Vector2( 2.5123, 2.11751 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="4"]
 
 position = Vector2( 143.676, 111.881 )
 scale = Vector2( 1.02231, 0.973383 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="5"]
 
 position = Vector2( 336.9, 303.672 )
 scale = Vector2( 1.02231, 0.973383 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="6"]
 
 position = Vector2( 367.372, 175.333 )
 scale = Vector2( 1.02231, 0.973383 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="7"]
 
 position = Vector2( 367.73, 80.6927 )
 scale = Vector2( 1.02231, 0.973383 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="8"]
 
 position = Vector2( 143.676, 303.672 )
 scale = Vector2( 1.02231, 0.973383 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Plain/TileMap/StaticBody2D" index="9"]
 
 position = Vector2( 82.0935, 205.673 )
 scale = Vector2( 1, 1.03658 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Boundaries" type="StaticBody2D" parent="Plain" index="1"]
 
@@ -157,7 +157,7 @@ __meta__ = {
 
 position = Vector2( 224.48, 32.5279 )
 scale = Vector2( 22.3196, 3.52106 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -166,7 +166,7 @@ __meta__ = {
 
 position = Vector2( -20.8649, 204.1 )
 scale = Vector2( 2.09893, 16.2046 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -175,7 +175,7 @@ __meta__ = {
 
 position = Vector2( 470.412, 209.397 )
 scale = Vector2( 2.42982, -16.2506 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -184,7 +184,7 @@ __meta__ = {
 
 position = Vector2( 223.577, 372.55 )
 scale = Vector2( 22.389, 2.52121 )
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
