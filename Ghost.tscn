@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Monster_ghost.gd" type="Script" id=1]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_single.png" type="Texture" id=2]
 [ext_resource path="res://assets/speech_bubble3.png" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/pf_tempesta_five_compressed.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile003.png" type="Texture" id=5]
+[ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile004.png" type="Texture" id=6]
+[ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile005.png" type="Texture" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -19,7 +22,16 @@ use_filter = false
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Ghost" type="KinematicBody2D"]
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[node name="Ghost" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -33,6 +45,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
+visible = false
 texture = ExtResource( 2 )
 
 [node name="ghost_timer" type="Timer" parent="." index="2"]
@@ -73,6 +86,13 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="4"]
+
+frames = SubResource( 3 )
+animation = "default"
+frame = 2
+playing = true
 
 [connection signal="timeout" from="ghost_timer" to="." method="_on_bubble_timer_timeout"]
 
