@@ -18,7 +18,7 @@ _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 custom_solver_bias = 0.0
 radius = 16.2807
 
-[node name="Monster" type="KinematicBody2D"]
+[node name="Monster" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -30,8 +30,9 @@ script = ExtResource( 1 )
 
 visible = false
 position = Vector2( 32.7501, -11.5 )
+z_index = 1
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
 [node name="speech" type="Label" parent="speech bubble" index="0"]
 
@@ -44,6 +45,7 @@ margin_top = -14.0
 margin_right = 32.0
 margin_bottom = 5.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1

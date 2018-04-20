@@ -29,13 +29,15 @@ animations = [ {
 "speed": 4.0
 } ]
 
-[node name="Bat" type="KinematicBody2D"]
+[node name="Bat" type="KinematicBody2D" index="0"]
 
+z_index = 1
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
@@ -71,6 +73,7 @@ margin_top = -14.0
 margin_right = 29.0
 margin_bottom = 3.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -83,7 +86,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="4"]
+[node name="Bat_flapping" type="AnimatedSprite" parent="." index="4"]
 
 frames = SubResource( 3 )
 animation = "default"

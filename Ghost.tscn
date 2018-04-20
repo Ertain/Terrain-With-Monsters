@@ -38,6 +38,7 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -59,7 +60,9 @@ autostart = false
 
 visible = false
 position = Vector2( 33.8577, -44.8517 )
+z_index = 1
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="Label" type="Label" parent="speech bubble" index="0"]
 
@@ -72,6 +75,7 @@ margin_top = -28.0
 margin_right = 29.0
 margin_bottom = 23.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -87,11 +91,10 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="4"]
+[node name="Ghost_floating" type="AnimatedSprite" parent="." index="4"]
 
 frames = SubResource( 3 )
 animation = "default"
-frame = 2
 playing = true
 
 [connection signal="timeout" from="ghost_timer" to="." method="_on_bubble_timer_timeout"]

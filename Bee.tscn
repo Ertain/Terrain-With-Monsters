@@ -50,8 +50,9 @@ shape = SubResource( 1 )
 
 visible = false
 position = Vector2( 28.8443, -38.465 )
+z_index = 1
 texture = ExtResource( 3 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Visibility", "Z Index" ]
 
 [node name="Label" type="Label" parent="speech_bubble" index="0"]
 
@@ -64,6 +65,7 @@ margin_top = -23.0
 margin_right = 23.0
 margin_bottom = 16.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -89,7 +91,6 @@ autostart = false
 
 frames = SubResource( 3 )
 animation = "default"
-frame = 1
 playing = true
 
 [connection signal="timeout" from="bubble_timer" to="." method="_on_bubble_timer_timeout"]
