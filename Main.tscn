@@ -1,11 +1,15 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
-[ext_resource path="res://assets/various.tsx" type="TileSet" id=2]
-[ext_resource path="res://Blob.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Bat.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Bee.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Ghost.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/music/S31-The Groove.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/Falling rocks.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/various.tsx" type="TileSet" id=4]
+[ext_resource path="res://Blob.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Bat.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Bee.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Ghost.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/Tresure Box/treasure_tiles/box_orange/tile000.png" type="Texture" id=9]
+[ext_resource path="res://assets/Tresure Box/treasure_tiles/box_orange/tile001.png" type="Texture" id=10]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -27,14 +31,34 @@ radius = 13.9035
 custom_solver_bias = 0.0
 extents = Vector2( 10, 8.91259 )
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" index="0"]
 
+scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="Plain" type="TileMap" parent="." index="0"]
+[node name="Background Music" type="AudioStreamPlayer2D" parent="." index="0"]
+
+stream = ExtResource( 2 )
+volume_db = 0.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Falling_Rocks" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Plain" type="TileMap" parent="." index="2"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 32, 32 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -55,7 +79,7 @@ _sections_unfolded = [ "Cell" ]
 [node name="TileMap" type="TileMap" parent="Plain" index="0"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 32, 32 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -73,8 +97,33 @@ format = 1
 tile_data = PoolIntArray( 196619, 26, 0, 262148, 26, 0, 327682, 20, 0, 393227, 26, 0, 458754, 3, 0, 524296, 20, 0, 589835, 5, 0, 655362, 20, 0, 655364, 26, 0, 655370, 26, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Plain/TileMap" index="0"]
+[node name="Rock1" type="Button" parent="Plain/TileMap" index="0"]
 
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = 134.0
+margin_right = 95.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Plain/TileMap" index="1"]
+
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -145,6 +194,7 @@ shape = SubResource( 3 )
 
 [node name="Boundaries" type="StaticBody2D" parent="Plain" index="1"]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -192,20 +242,50 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Blob" parent="Plain" index="2" instance=ExtResource( 3 )]
+[node name="Blob" parent="Plain" index="2" instance=ExtResource( 5 )]
 
 position = Vector2( 219.138, 201.176 )
 
-[node name="Bat" parent="Plain" index="3" instance=ExtResource( 4 )]
+[node name="Bat" parent="Plain" index="3" instance=ExtResource( 6 )]
 
 position = Vector2( 186.331, 229.968 )
 
-[node name="Bee" parent="Plain" index="4" instance=ExtResource( 5 )]
+[node name="Bee" parent="Plain" index="4" instance=ExtResource( 7 )]
 
 position = Vector2( 253.607, 173.482 )
 
-[node name="Ghost" parent="Plain" index="5" instance=ExtResource( 6 )]
+[node name="Ghost" parent="Plain" index="5" instance=ExtResource( 8 )]
 
 position = Vector2( 283.746, 197.74 )
+_sections_unfolded = [ "Pause", "Z Index" ]
+
+[node name="Treasure box" type="TextureButton" parent="Plain" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 406.0
+margin_top = 312.0
+margin_right = 446.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+_sections_unfolded = [ "Textures" ]
+
+[connection signal="pressed" from="Plain/TileMap/Rock1" to="." method="_on_Rock1_pressed"]
+
+[connection signal="pressed" from="Plain/Treasure box" to="." method="_on_Treasure_box_pressed"]
 
 

@@ -20,7 +20,24 @@
 
 extends Node2D
 
+onready var music_box = get_node("Background Music")
+
+func _ready():
+    # For some odd reason, this loops by default. Therefore,
+    # we need to turn off looping.
+    $Falling_Rocks.stream.loop = false
+
 # Some code for exiting the program.
 func _process(change_in_time):
     if(Input.is_key_pressed(KEY_ESCAPE)):
         get_tree().quit()
+
+func _on_Treasure_box_pressed():
+    if music_box.is_playing():
+        music_box.stop()
+    else:
+        music_box.play()
+
+
+func _on_Rock1_pressed():
+    $Falling_Rocks.play()
