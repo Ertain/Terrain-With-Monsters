@@ -28,6 +28,8 @@ var waited = 0
 var show_speech_bubble = false
 onready var speech_bubble_timer = get_node("bubble_timer")
 onready var speech_bubble = get_node("speech bubble")
+# The music player
+onready var music_player = get_node('/root/Main/Background Music')
 var the_collider = 0
 var collisionCounter = 0
 
@@ -48,21 +50,22 @@ func _ready():
 
 func _physics_process(change_in_time):
     var motion = Vector2()
+
+    if not music_player.playing:
+        speech_bubble.hide()
     
-    if waited > delay:
+    if waited > delay and music_player.is_playing():
         var selection = randomly_select_direction()
         if selection == "move_up":
-            # motion += Vector2(0, -1)
             motion.y = -1
         elif selection == "move_down":
-            # motion += Vector2(0, 1)
             motion.y = 1
         if selection == "move_left":
-            # motion += Vector2(-1, 0)
             motion.x = -1
+            $Blob.flip_h = false
         elif selection == "move_right":
-            # motion += Vector2(1, 0)
             motion.x = 1
+            $Blob.flip_h = true
         if motion != Vector2():
             speed = MAX_SPEED
         else:
@@ -70,7 +73,7 @@ func _physics_process(change_in_time):
         vel = motion.normalized() * speed
         move_and_slide(vel)
         waited = 0
-    elif waited <= delay:
+    elif waited <= delay and music_player.is_playing():
         waited += change_in_time
     
     # Show the speech bubble. Set a timer to count down

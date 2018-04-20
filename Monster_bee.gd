@@ -23,6 +23,8 @@ var waited = 0# We can't have the speech bubble showing all the time.
 var show_speech_bubble = false
 onready var speech_bubble = get_node("speech_bubble")
 onready var speech_bubble_timer = get_node("bubble_timer")
+# The music player
+onready var music_player = get_node('/root/Main/Background Music')
 
 
 func randomly_select_direction():
@@ -43,7 +45,10 @@ func _ready():
 func _physics_process(change_in_time):
     var motion = Vector2()
     
-    if waited > delay:
+    if not music_player.playing:
+        speech_bubble.hide()
+    
+    if waited > delay and music_player.is_playing():
         var selection = randomly_select_direction()
         if selection == "move_up":
             # motion += Vector2(0, -1)
@@ -64,7 +69,7 @@ func _physics_process(change_in_time):
         vel = motion.normalized() * speed
         move_and_slide(vel)
         waited = 0
-    elif waited <= delay:
+    elif waited <= delay and music_player.is_playing():
         waited += change_in_time
 
     # Show the speech bubble. Set a timer to count down
