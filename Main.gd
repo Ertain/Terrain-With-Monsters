@@ -35,6 +35,7 @@ func _process(change_in_time):
 func _on_Treasure_box_pressed():
     if music_box.is_playing():
         music_box.stop()
+        $"Plain/Ghost/complain timer".start()
     else:
         music_box.play()
 
