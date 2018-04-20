@@ -61,7 +61,6 @@ autostart = false
 
 visible = false
 position = Vector2( 44.9712, -56.2948 )
-scale = Vector2( 1, 1 )
 z_index = 2
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Z Index" ]
@@ -133,12 +132,11 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 frames = SubResource( 3 )
 animation = "default"
-frame = 2
 playing = true
 
 [node name="complain timer" type="Timer" parent="." index="6"]
 
-process_mode = 1
+process_mode = 0
 wait_time = 1.0
 one_shot = false
 autostart = false

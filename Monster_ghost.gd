@@ -43,6 +43,12 @@ func randomly_select_direction():
 func _on_bubble_timer_timeout():
     speech_bubble.hide()
 
+func _on_complain_timer_timeout():
+    if not music_player.is_playing():
+        $"speech bubble complain".show()
+    else:
+        $"speech bubble complain".hide()
+
 func _ready():
     randomize()
     speech_bubble_timer.wait_time = 1
@@ -83,15 +89,9 @@ func _physics_process(change_in_time):
         speech_bubble.show()
         speech_bubble_timer.start()
         show_speech_bubble = false
-    
-    if music_player.is_playing():
-        $"speech bubble complain".hide()
 
     var collisionCounter = get_slide_count() - 1
     if collisionCounter > -1:
         var le_collision =  get_slide_collision(0).collider
         if le_collision is KinematicBody2D:
             show_speech_bubble = true
-
-func _on_complain_timer_timeout():
-    $"speech bubble complain".show()
