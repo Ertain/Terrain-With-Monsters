@@ -83,9 +83,15 @@ func _physics_process(change_in_time):
         speech_bubble.show()
         speech_bubble_timer.start()
         show_speech_bubble = false
+    
+    if music_player.is_playing():
+        $"speech bubble complain".hide()
 
     var collisionCounter = get_slide_count() - 1
     if collisionCounter > -1:
         var le_collision =  get_slide_collision(0).collider
         if le_collision is KinematicBody2D:
             show_speech_bubble = true
+
+func _on_complain_timer_timeout():
+    $"speech bubble complain".show()
