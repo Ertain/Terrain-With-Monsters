@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile000.png-037b3fde84e615f6bbbf8d958800f015.stex"
+
+[deps]
+
+source_file="res://assets/Tresure Box/treasure_tiles/box_green/tile000.png"
+source_md5="2675f8fb51073edf133112a66c39de8f"
+
+dest_files=[ "res://.import/tile000.png-037b3fde84e615f6bbbf8d958800f015.stex" ]
+dest_md5="f06404c0b71e8718a957a8157445d06a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

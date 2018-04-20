@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/S31-The Groove.ogg-4e09c4312971a524e4a4c08eb41ac862.oggstr"
+
+[deps]
+
+source_file="res://assets/music/S31-The Groove.ogg"
+source_md5="e296ed9284ac83b57285e1495d93fa33"
+
+dest_files=[ "res://.import/S31-The Groove.ogg-4e09c4312971a524e4a4c08eb41ac862.oggstr" ]
+dest_md5="1aa001bdccdcdaecc52430b8020e5187"
+
+[params]
+
+loop=true
+loop_offset=0

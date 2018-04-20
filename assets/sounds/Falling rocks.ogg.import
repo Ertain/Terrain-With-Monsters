@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Falling rocks.ogg-30fa298fdfa4c99b6c7cd439dcf3c0ab.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/Falling rocks.ogg"
+source_md5="7d045ad47d3ab1c904490498cafecbf1"
+
+dest_files=[ "res://.import/Falling rocks.ogg-30fa298fdfa4c99b6c7cd439dcf3c0ab.oggstr" ]
+dest_md5="d061da3afae7e69fea60ccceb90596af"
+
+[params]
+
+loop=true
+loop_offset=0

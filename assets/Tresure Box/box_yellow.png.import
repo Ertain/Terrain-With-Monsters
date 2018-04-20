@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/box_yellow.png-8db9435df6b55a5170d4c54637c214da.stex"
+
+[deps]
+
+source_file="res://assets/Tresure Box/box_yellow.png"
+source_md5="3d6435e287a45da768abeb8b7fcb851d"
+
+dest_files=[ "res://.import/box_yellow.png-8db9435df6b55a5170d4c54637c214da.stex" ]
+dest_md5="cf45cb4eaa15829df338e320f2785149"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
