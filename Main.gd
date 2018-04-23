@@ -21,6 +21,9 @@
 extends Node2D
 
 onready var music_box = get_node("Background Music")
+var phrases = ['I could\nsure use some\nmoisturizer.', 'Thank you\nfor clicking\nthat!', 'Is this\na secret to\neverybody?', 'There will\nbe light\nshowers\nthis evening.',
+                'Why don\'t\nyou go\nand click off?']
+var music_offset = 0.0
 
 func _ready():
     # For some odd reason, this loops by default. Therefore,
@@ -34,11 +37,20 @@ func _process(change_in_time):
 
 func _on_Treasure_box_pressed():
     if music_box.is_playing():
+        music_offset = music_box.get_playback_position()
         music_box.stop()
         $"Plain/Ghost/complain timer".start()
     else:
-        music_box.play()
+        music_box.play(music_offset)
 
 
 func _on_Rock1_pressed():
     $Falling_Rocks.play()
+
+func _on_Crystal1_pressed():
+    $Fortune/MarginContainer/HBoxContainer/Label.align = HALIGN_CENTER
+    $Fortune/MarginContainer/HBoxContainer/Label.text = phrases[ randi() % phrases.size() ]
+    $Fortune.popup()
+
+func _on_okay_button_pressed():
+    $Fortune.hide()
