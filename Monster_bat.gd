@@ -45,7 +45,6 @@ func _ready():
     # Updates during the "_physics_process".
     speech_bubble_timer.process_mode = 0
 
-
 func _physics_process(change_in_time):
     var motion = Vector2()
     
@@ -63,7 +62,7 @@ func _physics_process(change_in_time):
         elif selection == "move_right":
             motion.x = 1
         if motion != Vector2():
-            speed = MAX_SPEED
+                speed = MAX_SPEED
         else:
             speed = 0
         vel = motion.normalized() * speed
