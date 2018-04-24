@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tile029.png-1f7f1925a8309a70c2c22fa9d6a7bf5c.stex"
+
+[deps]
+
+source_file="res://assets/LPC Base Assets/sprites/people/princess tiles/tile029.png"
+source_md5="ebe7ad9a56b3cf9daff130540e63740d"
+
+dest_files=[ "res://.import/tile029.png-1f7f1925a8309a70c2c22fa9d6a7bf5c.stex" ]
+dest_md5="a2838a051d29ae1ca9a35906df63d47a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
