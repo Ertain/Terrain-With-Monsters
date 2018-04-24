@@ -137,7 +137,7 @@ playing = true
 [node name="complain timer" type="Timer" parent="." index="6"]
 
 process_mode = 0
-wait_time = 1.0
+wait_time = 1.5
 one_shot = false
 autostart = false
 
