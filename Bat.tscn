@@ -60,7 +60,9 @@ autostart = false
 
 visible = false
 position = Vector2( 34.1813, -23.822 )
+z_index = 1
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="Label" type="Label" parent="speech_bubble" index="0"]
 
@@ -90,7 +92,6 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 frames = SubResource( 3 )
 animation = "default"
-frame = 2
 playing = true
 
 [connection signal="timeout" from="bat_timer" to="." method="_on_bubble_timer_timeout"]
