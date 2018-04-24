@@ -63,7 +63,7 @@ func _physics_process(change_in_time):
             # motion += Vector2(1, 0)
             motion.x = 1
         if motion != Vector2():
-            speed = MAX_SPEED
+                speed = MAX_SPEED
         else:
             speed = 0
         vel = motion.normalized() * speed
