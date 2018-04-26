@@ -316,14 +316,14 @@ shape = SubResource( 3 )
 
 position = Vector2( 365.333, 272 )
 scale = Vector2( 0.375, 0.395833 )
-input_pickable = false
+input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-_sections_unfolded = [ "Collision" ]
+_sections_unfolded = [ "Collision", "Pickable" ]
 
 [node name="Warning_shape" type="CollisionShape2D" parent="Plain/TileMap/Warning_body" index="0"]
 
