@@ -46,7 +46,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Main" type="Node2D" index="0"]
 
-scale = Vector2( 1.5, 1.5 )
+scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
