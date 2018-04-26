@@ -61,9 +61,7 @@ func _on_Crystal1_pressed():
     $Fortune.popup()
 
 func _on_Warning_body_mouse_entered():
-    print("Mouse entered!")
     $Plain/warning_bubble.show()
 
 func _on_Warning_body_mouse_exited():
-    print("Mouse exited!")
     $Plain/warning_bubble.hide()
