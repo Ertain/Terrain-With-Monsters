@@ -14,7 +14,7 @@ radius = 16.6072
 
 [sub_resource type="DynamicFont" id=2]
 
-size = 12
+size = 11
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 4 )
@@ -70,10 +70,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -27.0
-margin_top = -14.0
-margin_right = 29.0
-margin_bottom = 3.0
+margin_left = -25.0
+margin_top = -13.0
+margin_right = 24.0
+margin_bottom = 4.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -92,6 +92,7 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 frames = SubResource( 3 )
 animation = "default"
+frame = 1
 playing = true
 
 [connection signal="timeout" from="bat_timer" to="." method="_on_bubble_timer_timeout"]

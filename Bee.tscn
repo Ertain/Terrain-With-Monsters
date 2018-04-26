@@ -3,7 +3,7 @@
 [ext_resource path="res://Monster_bee.gd" type="Script" id=1]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/bee_tiles/tile007.png" type="Texture" id=2]
 [ext_resource path="res://assets/speech_bubble2.png" type="Texture" id=3]
-[ext_resource path="res://assets/fonts/pf_tempesta_five_compressed.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/fonts/pf_tempesta_five_condensed.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/bee_tiles/tile006.png" type="Texture" id=5]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/bee_tiles/tile008.png" type="Texture" id=6]
 
@@ -60,9 +60,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -21.0
+margin_left = -25.0
 margin_top = -23.0
-margin_right = 23.0
+margin_right = 26.0
 margin_bottom = 16.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -91,6 +91,7 @@ autostart = false
 
 frames = SubResource( 3 )
 animation = "default"
+frame = 2
 playing = true
 
 [connection signal="timeout" from="bubble_timer" to="." method="_on_bubble_timer_timeout"]

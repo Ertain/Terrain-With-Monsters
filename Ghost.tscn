@@ -3,7 +3,7 @@
 [ext_resource path="res://Monster_ghost.gd" type="Script" id=1]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_single.png" type="Texture" id=2]
 [ext_resource path="res://assets/speech_bubble_complain.png" type="Texture" id=3]
-[ext_resource path="res://assets/fonts/pf_tempesta_five_compressed.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/fonts/pf_tempesta_five_condensed.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://assets/speech_bubble3.png" type="Texture" id=5]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile003.png" type="Texture" id=6]
 [ext_resource path="res://assets/LPC Base Assets/sprites/monsters/ghost_tiles/tile004.png" type="Texture" id=7]
@@ -132,6 +132,7 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 frames = SubResource( 3 )
 animation = "default"
+frame = 2
 playing = true
 
 [node name="complain timer" type="Timer" parent="." index="6"]
